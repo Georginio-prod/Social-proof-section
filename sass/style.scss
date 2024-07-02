@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=League Spartan:275,200,400,500,600");
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "League Spartan", "sans serief";
 }
 
 body {
@@ -50,21 +53,168 @@ body {
 
 .position {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
     flex-direction: column;
+    gap: 71px;
    
 }
 
-.position__text{
+.position__text {
+    display: flex;
+    flex-direction: row;
     width: 1110px;
     height: 245px;
+    position: relative;
+}
+
+.text {
+    height: 100%;
+    width: 41%;
+
+}
+
+.text__h1 {
+    color: #512051 ;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.text__h4 {
+    color: #927B91 ;
+    font-size: 19px;
+    font-weight: 300px;
+}
+
+.section {
+    display: flex;
+    height: 200px;
+    width: 540px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 22.5px;
+    gap: 21px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.color {
+ color: #512051 ;
+ font-size: 17px;
+ font-weight: 900;
+}
+
+.section__first,
+.section__second,
+.section__tree {
+    width: 445px;
+    height: 56px;
+    background-color: #F7F2F7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.card {
-    width: 1110px;
+.section__second{
+    margin-left: 50px;
+}
+
+
+.section__tree{
+    margin-left: 97px;
+}
+
+.section--img {
+    padding-right: 70px;
+}
+
+
+.position__card{
     height: 266px;
-   
+    width: 1110px;
+    gap: 30px;
+    flex-direction: row;
+    display: flex;
+    color:  white;
+    &--one,
+    &--two,
+    &--tree {
+        width: 350px;
+        height: 234px;
+        background-color:#512051 ;
+        border-radius: 8px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 17px;
+        
+    }
+
+    &--two {
+        margin-top: 16px;
+    }
+
+    &--tree {
+        margin-top: 32px;
+    }
+}
+
+.format {
+    width: 162px ;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.card--image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.card--des {
+    width: 286px ;
+    margin-bottom: 27px;
+}
+
+.color1 {
+    color: #EE69A4;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.attribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3D8168;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.attribution a:visited {
+    color: rgb(23, 150, 61); /* Couleur des liens visités */
+}
+
+.attribution a:hover {
+    color: rgb(102, 11, 11); /* Couleur des liens au survol */
 }
